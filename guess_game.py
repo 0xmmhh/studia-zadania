@@ -1,16 +1,19 @@
 import random
 
 number = random.randint(1, 10)
-guessed = False
 
-while not guessed:
+num_of_tries = 0 
+max_num_of_tries = 5
+
+while num_of_tries < max_num_of_tries:
     shot = int(input("Guess a number between 1 and 10: "))
+    num_of_tries += 1
+    if num_of_tries == max_num_of_tries:
+        print("Try again, you only have 5 tries")
     if shot == number:
-        print("You guessed it!")
-        zgadniete = True
+        print(f"You guessed it in {num_of_tries} tries!")
         break
     elif shot > number:
-        print("Nearly there, try lower number")
-
+        print("Try lower number")
     else:
-        print("Nearly there, try higher number")
+        print("Try higher number")
