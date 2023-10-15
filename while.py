@@ -1,4 +1,4 @@
-#reversing string
+#reversing string using while loop
 """"
 tekst = input("Podaj tekst: ")
 reversed = ""
@@ -9,6 +9,7 @@ while i >= 0:
 
 print(f"Odwrocony tekst: {reversed}")
 """
+#reversing string using simpler method
 
 tekst = input("Podaj tekst")
 
