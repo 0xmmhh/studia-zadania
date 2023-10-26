@@ -1,7 +1,7 @@
 import sys
 
 num_of_tries = 5
-secret_word = "drewienko"
+secret_word = "sukienka"
 used_letters = []
 
 user_word = []
